@@ -31,6 +31,7 @@ test('the computed property is changed', function(assert) {
   run(obj, 'set', 'b', 2);
   assert.strictEqual(obj.get('a'), 1, 'The `by` property is the same');
   assert.strictEqual(obj.get('b'), 2, 'The computed property is changed');
+  assert.strictEqual(obj.get('b'), 2, 'The computed property is changed on 2nd time');
 });
 
 test('the computed property is changed when `by` property changed', function(assert) {
