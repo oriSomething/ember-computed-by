@@ -1,25 +1,23 @@
 # Ember-computed-by
 
-This README outlines the details of collaborating on this Ember addon.
+`Ember computed by` made to allow `computed.oneWay` that still has its bindings to original property.
+
+CAVEAT: if you need to **set** property as `undefined` you might have some issues and it would better to have `computed.oneWay` addition to an `observer`.
+
 
 ## Installation
 
-* `git clone` this repository
-* `npm install`
-* `bower install`
+`npm install ember-computed-by`
 
-## Running
 
-* `ember server`
-* Visit your app at http://localhost:4200.
+## Using
 
-## Running Tests
+```js
+import Ember from 'ember';
+import computedBy from 'ember-computed-by';
 
-* `ember test`
-* `ember test --server`
+export default Ember.Component.extend({
+  finalValue: computedBy('value');
+});
 
-## Building
-
-* `ember build`
-
-For more information on using ember-cli, visit [http://www.ember-cli.com/](http://www.ember-cli.com/).
+```
