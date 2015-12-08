@@ -1,4 +1,4 @@
-# Ember-computed-by
+# Ember-computed-by [![Build Status](https://travis-ci.org/oriSomething/ember-computed-by.svg)](https://travis-ci.org/oriSomething/ember-computed-by)
 
 `Ember computed by` made to allow `computed.oneWay` that still has its bindings to original property.
 
